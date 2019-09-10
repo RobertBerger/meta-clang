@@ -18,14 +18,14 @@ git push -u origin master
 
 3) use my repo
 
-mv meta-openembedded meta-openembedded.ori
-git clone git@github.com:RobertBerger/meta-openembedded.git
+mv meta-clang meta-clang.ori
+git clone git@github.com:RobertBerger/meta-clang.git
 
 4) add upstream
 
 cd meta-openembedded
 
-git remote add official-upstream git://git.openembedded.org/meta-openembedded
+git remote add official-upstream git://github.com/kraj/meta-clang
 
 git fetch official-upstream
 
@@ -35,7 +35,7 @@ git branch -a
 
 syntax: git fetch url-to-repo branchname:refs/remotes/origin/branchname
 
-git fetch git://git.openembedded.org/meta-openembedded warrior:refs/remotes/origin/warrior
+git fetch git://github.com/kraj/meta-clang warrior:refs/remotes/origin/warrior
 
 6) Update from upstream:
 git co master
