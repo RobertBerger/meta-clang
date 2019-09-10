@@ -23,7 +23,7 @@ git clone git@github.com:RobertBerger/meta-clang.git
 
 4) add upstream
 
-cd meta-openembedded
+cd meta-clang
 
 git remote add official-upstream git://github.com/kraj/meta-clang
 
